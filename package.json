@@ -1,0 +1,22 @@
+{
+  "name": "storycast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --watch --update sass/main.scss css/main.css",
+    "sass:build": "sass sass/main.scss css/main.css --style=compressed --no-source-map",
+    "serve": "browser-sync start --server --no-notify --files \"index.html, css/.css, js/.js\"",
+    "dev": "concurrently \"npm:sass:dev\" \"npm:serve\"",
+    "build": "npm run sass:build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.6",
+    "sass": "^1.105.2"
+  }
+}
