@@ -1,0 +1,73 @@
+@layer base {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: var(--paper);
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        display: block;
+    }
+
+    a {
+        color: var(--brand);
+        text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+        color: var(--brand-dark);
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    :focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 3px;
+        box-shadow: 0 0 0 6px var(--signal);
+    }
+
+    .skip-link {
+        position: absolute;
+        left: var(--m);
+        top: -4rem;
+        background: var(--ink);
+        color: #fff;
+        padding: var(--s) var(--m);
+        z-index: 10;
+    }
+
+    .skip-link:focus {
+        top: var(--s);
+    }
+
+    .wrap {
+        width: min(70rem, 100% - 2rem);
+        margin-inline: auto;
+    }
+
+    section {
+        padding-block: var(--xl);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        * {
+            animation: none !important;
+            transition: none !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}

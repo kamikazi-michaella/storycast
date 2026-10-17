@@ -1,0 +1,20 @@
+// Colour tokens. On white: ink 16:1, brand 7.4:1, muted 7:1 (all pass WCAG AA)
+$paper: #ffffff;
+$wash: #eef3f6;
+$ink: #0f1b2d;
+$muted: #43506a;
+$brand: #0b5c6b;
+$brand-dark: #08424d;
+$signal: #ffc83d;
+
+@layer tokens {
+    :root {
+        --paper: #{$paper};
+        --wash: #{$wash};
+        --ink: #{$ink};
+        --muted: #{$muted};
+        --brand: #{$brand};
+        --brand-dark: #{$brand-dark};
+        --signal: #{$signal};
+    }
+}

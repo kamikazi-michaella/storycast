@@ -1,0 +1,13 @@
+$space-s: 0.5rem;
+$space-m: 1rem;
+$space-l: 2rem;
+$space-xl: 4rem;
+
+@layer tokens {
+    :root {
+        --s: #{$space-s};
+        --m: #{$space-m};
+        --l: #{$space-l};
+        --xl: #{$space-xl};
+    }
+}

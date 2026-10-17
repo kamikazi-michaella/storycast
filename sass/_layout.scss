@@ -1,0 +1,92 @@
+// Flexbox: header and nav
+@layer layout {
+    .site-header {
+        background: var(--ink);
+        color: #fff;
+    }
+
+    .site-header__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--m);
+        padding-block: var(--m);
+    }
+
+    .site-header__logo {
+        font-family: var(--font-display);
+        font-size: var(--step-1);
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .site-nav__list {
+        display: flex;
+        gap: var(--m);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-nav__link {
+        color: #fff;
+        padding: var(--s) var(--m);
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+    }
+
+    .site-nav__link:hover,
+    .site-nav__link[aria-current="page"] {
+        border-bottom-color: var(--signal);
+        color: #fff;
+    }
+
+    // Grid: hero, card grid, story page
+    .hero {
+        background: var(--wash);
+    }
+
+    .hero__inner {
+        display: grid;
+        gap: var(--l);
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    @media (min-width: 52rem) {
+        .hero__inner {
+            grid-template-columns: 1.3fr 1fr;
+        }
+    }
+
+    .card-grid {
+        display: grid;
+        gap: var(--l);
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        list-style: none;
+        padding: 0;
+    }
+
+    .story-layout {
+        display: grid;
+        gap: var(--l);
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 60rem) {
+        .story-layout {
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+
+    .site-footer {
+        background: var(--ink);
+        color: #fff;
+        padding-block: var(--l);
+    }
+
+    .site-footer__link {
+        color: #fff;
+    }
+}
