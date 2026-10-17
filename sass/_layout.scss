@@ -89,4 +89,10 @@
     .site-footer__link {
         color: #fff;
     }
+
+    .story-layout__main {
+        display: grid;
+        gap: var(--xl);
+        min-width: 0; // lets the video shrink inside the grid column
+    }
 }

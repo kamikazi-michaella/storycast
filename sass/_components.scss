@@ -154,4 +154,74 @@
         border-left: 4px solid var(--brand);
         padding: var(--s) var(--m);
     }
+
+    // Breadcrumb
+    .breadcrumb {
+        padding-block: var(--m);
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--s);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__list li+li::before {
+            content: "/";
+            margin-right: var(--s);
+            color: var(--muted);
+        }
+    }
+
+    // Story article
+    .story {
+        &__header {
+            margin-bottom: var(--m);
+
+            h1,
+            h2 {
+                margin-block: 0 var(--s);
+            }
+        }
+
+        &__meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-block: 0 var(--s);
+        }
+
+        &+& {
+            border-top: 2px solid var(--ink);
+            padding-top: var(--xl);
+        }
+    }
+
+    // Media player spacing
+    .player {
+        margin: 0;
+
+        &__media {
+            border: 2px solid var(--ink);
+            background: var(--ink);
+        }
+    }
+
+    // Transcript polish
+    .transcript {
+        &__summary:hover {
+            color: var(--brand);
+        }
+
+        p {
+            margin-block: var(--s);
+        }
+    }
+
+    // Related stories heading
+    .related__title,
+    .related h2 {
+        margin-top: 0;
+    }
 }
