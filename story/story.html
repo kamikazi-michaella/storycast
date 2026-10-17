@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A Cinderella Story (video clip) | StoryCast</title>
-  <meta name="description" content="Watch a short animated retelling of Cinderella and listen to the audio clip, each with captions, a full transcript and a written summary.">
+  <meta name="description" content="Watch a short animated retelling of Cinderella and listen to the audio clip, each with captions, a live transcript and a written summary.">
+  <meta name="theme-color" content="#f7f2e8">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/live-transcript.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -33,53 +35,266 @@
         </ol>
       </nav>
 
+      <nav class="story-nav" aria-label="Story sections">
+        <a href="#story-heading">Watch</a>
+        <a href="#audio-h">Listen</a>
+        <a href="#reading-heading">Read</a>
+      </nav>
+
       <div class="story-layout">
         <div class="story-layout__main">
 
-          <!-- Video story -->
-          <article class="story" aria-labelledby="story-heading">
+          <article class="story story--video" aria-labelledby="story-heading">
             <header class="story__header">
-              <h1 id="story-heading">A Cinderella Story (video clip)</h1>
-              <p class="story__meta">Video &middot; about 2 minutes &middot; captions and transcript included</p>
-              <p><a href="#transcript-video">Jump to the transcript</a> &middot; <a href="#reading-heading">Jump to the written summary</a></p>
+              <p class="eyebrow">Featured story</p>
+              <h1 id="story-heading">A Cinderella Story</h1>
+              <p class="story__meta">Video &middot; 2 minutes &middot; Captions + live transcript</p>
             </header>
 
-            <figure class="player">
-              <video class="player__media" controls preload="metadata" playsinline width="640" height="360" poster="../assets/video/cinderella-clip-poster.jpg" aria-describedby="video-caption">
-                <source src="../assets/video/cinderella-clip.mp4" type="video/mp4">
-                <track kind="captions" src="../assets/transcripts/cinderella-video.en.vtt" srclang="en" label="English captions" default>
-                <p>Your browser cannot play this video. <a href="#transcript-video">Read the transcript instead</a>.</p>
-              </video>
-              <figcaption class="figure__caption" id="video-caption">A short animated retelling of Cinderella, with narration, dialogue and captions.</figcaption>
-            </figure>
+            <div class="story__watch">
+              <figure class="player">
+                <video id="story-video" class="player__media" controls preload="metadata" playsinline width="640" height="360" poster="../assets/video/cinderella-clip-poster.jpg" aria-describedby="video-caption">
+                  <source src="../assets/video/cinderella-clip.mp4" type="video/mp4">
+                  <track kind="captions" src="../assets/transcripts/cinderella-video.en.vtt" srclang="en" label="English captions" default>
+                  <p>Your browser cannot play this video. <a href="#transcript-video">Read the transcript instead</a>.</p>
+                </video>
+                <figcaption class="figure__caption" id="video-caption">A short animated retelling of Cinderella, with narration, dialogue and captions.</figcaption>
+              </figure>
 
-            <details class="transcript" id="transcript-video">
-              <summary class="transcript__summary">Full transcript (video)</summary>
-              <p>Descriptions of key visual action appear in [square brackets].</p>
-              <p><span class="transcript__time">[00:00]</span> <em>[Visual: A castle stands above a river in a green valley.]</em> <strong>Narrator:</strong> Once upon a time in a beautiful land far away lived a happy young girl named Ella.</p>
-              <p><span class="transcript__time">[00:10]</span> <em>[Visual: Ella&rsquo;s father lifts her in a rose garden.]</em> <strong>Narrator:</strong> Ella lived with her father who loved her very much. Their days were full of sunshine.</p>
-              <p><span class="transcript__time">[00:16]</span> <strong>Young Ella:</strong> Higher, Daddy. Higher.</p>
-              <p><span class="transcript__time">[00:19]</span> <em>[Visual: Rain falls as Ella mourns her father.]</em> <strong>Narrator:</strong> But sadness came when her father passed away, leaving Ella all alone.</p>
-              <p><span class="transcript__time">[00:25]</span> <em>[Visual: Lady Tremaine stands at the top of a staircase.]</em> <strong>Narrator:</strong> Her stepmother, Lady Tremaine, was cold and unkind. She took over the house.</p>
-              <p><span class="transcript__time">[00:33]</span> <em>[Visual: The two stepsisters argue in a messy bedroom.]</em> <strong>Narrator:</strong> She brought her two daughters, Anastasia and Drizella, who were loud and messy. They treated poor Ella like a servant. They even changed her name.</p>
-              <p><span class="transcript__time">[00:46]</span> <strong>Lady Tremaine:</strong> The ball is tonight, Ella. Enjoy your scrubbing.</p>
-              <p><span class="transcript__time">[00:53]</span> <em>[Visual: Cinderella kneels on the floor, scrubbing.]</em> <strong>Stepsisters:</strong> Look at her. She is covered in cinders and dirt.</p>
-              <p><span class="transcript__time">[00:59]</span> <strong>Stepsisters:</strong> Let&rsquo;s call her Cinderella.</p>
-              <p><span class="transcript__time">[01:02]</span> <strong>Stepsisters:</strong> Yes, Cinderella the Maid.</p>
-              <p><span class="transcript__time">[01:07]</span> <em>[Visual: Cinderella works in the kitchen.]</em> <strong>Narrator:</strong> From that day on, Cinderella worked from sunrise to sunset. She cooked the meals, washed the dishes, and cleaned the clothes.</p>
-              <p><span class="transcript__time">[01:23]</span> <em>[Visual: Cinderella smiles despite her work.]</em> <strong>Narrator:</strong> Yet, despite their cruelty, Cinderella remained kind and gentle.</p>
-              <p><span class="transcript__time">[01:31]</span> <em>[Visual: Cinderella kneels beside a mouse at a window.]</em> <strong>Cinderella:</strong> Don&rsquo;t worry, little friends. Someday things will be better.</p>
-              <p><span class="transcript__time">[01:39]</span> <em>[Visual: Cinderella sits in a dusty attic, looking at the castle through a round window.]</em> <strong>Narrator:</strong> Cinderella lived in a dusty attic high up in the tower. She dreamed of a life where she could be free and happy.</p>
-              <p><span class="transcript__time">[01:52]</span> <em>[Visual: A golden carriage arrives at the castle gate.]</em> <strong>Narrator:</strong> One morning a royal messenger arrived with exciting news.</p>
-              <p><a href="../assets/transcripts/cinderella-video.en.vtt" download>Download the video captions (WebVTT)</a> &middot; <a href="../assets/transcripts/cinderella-transcript.txt" download>Download the transcript as plain text</a></p>
-            </details>
+              <section class="live-transcript" id="transcript-video" data-live-transcript data-media="#story-video" aria-labelledby="transcript-video-title">
+                <div class="live-transcript__head">
+                  <div>
+                    <p class="eyebrow">Live transcript</p>
+                    <h2 id="transcript-video-title">Follow the video</h2>
+                  </div>
+                  <button class="live-transcript__status" type="button" data-transcript-status aria-pressed="true">Following</button>
+                </div>
+                <ol class="live-transcript__body" tabindex="0" aria-label="Video transcript lines">
+                  <li class="live-transcript__line" data-start="0.4" data-end="4">
+                    <span class="live-transcript__time">00:00</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: A castle stands above a river in a green valley.]</span> Once upon a time in a beautiful land far away</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="4" data-end="7.2">
+                    <span class="live-transcript__time">00:04</span>
+                    <span class="live-transcript__text">lived a happy young girl named Ella.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="7.2" data-end="12.02">
+                    <span class="live-transcript__time">00:07</span>
+                    <span class="live-transcript__text">Ella lived with her father who loved her very much.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="12.72" data-end="16.32">
+                    <span class="live-transcript__time">00:12</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Ella&rsquo;s father lifts her in a rose garden.]</span> Their days were full of sunshine.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="16.32" data-end="19.039">
+                    <span class="live-transcript__time">00:16</span>
+                    <span class="live-transcript__text">Higher, Daddy. Higher.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="19.039" data-end="24.72">
+                    <span class="live-transcript__time">00:19</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Rain falls as Ella mourns her father.]</span> But sadness came when her father passed away, leaving Ella all alone.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="25.6" data-end="29.84">
+                    <span class="live-transcript__time">00:25</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Lady Tremaine stands at the top of a staircase.]</span> Her stepmother, Lady Tremaine, was cold and unkind.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="30.84" data-end="32.84">
+                    <span class="live-transcript__time">00:30</span>
+                    <span class="live-transcript__text">She took over the house.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="33.16" data-end="36.75">
+                    <span class="live-transcript__time">00:33</span>
+                    <span class="live-transcript__text">She brought her two daughters, Anastasia and Drizella,</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="36.75" data-end="43.6">
+                    <span class="live-transcript__time">00:36</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: The stepsisters argue in a messy bedroom.]</span> who were loud and messy. They treated poor Ella like a servant.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="43.6" data-end="46.719">
+                    <span class="live-transcript__time">00:43</span>
+                    <span class="live-transcript__text">They even changed her name.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="46.719" data-end="52.68">
+                    <span class="live-transcript__time">00:46</span>
+                    <span class="live-transcript__text">The ball is tonight, Ella. Enjoy your scrubbing.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="53.199" data-end="58.879">
+                    <span class="live-transcript__time">00:53</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella kneels on the floor, scrubbing.]</span> Look at her. She is covered in cinders and dirt.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="58.879" data-end="62.16">
+                    <span class="live-transcript__time">00:58</span>
+                    <span class="live-transcript__text">Let's call her Cinderella.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="62.16" data-end="67.159">
+                    <span class="live-transcript__time">01:02</span>
+                    <span class="live-transcript__text">Yes, Cinderella the Maid.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="67.2" data-end="73">
+                    <span class="live-transcript__time">01:07</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella works in the kitchen.]</span> From that day on, Cinderella worked from sunrise to sunset.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="73" data-end="77.6">
+                    <span class="live-transcript__time">01:13</span>
+                    <span class="live-transcript__text">She cooked the meals, washed the dishes, and cleaned the clothes.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="83.04" data-end="90.758">
+                    <span class="live-transcript__time">01:23</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella smiles despite her work.]</span> Yet, despite their cruelty, Cinderella remained kind and gentle.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="90.96" data-end="98.359">
+                    <span class="live-transcript__time">01:30</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella kneels beside a mouse at a window.]</span> Don't worry, little friends. Someday things will be better.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="99.2" data-end="105">
+                    <span class="live-transcript__time">01:39</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella sits in a dusty attic, looking at the castle through a round window.]</span> Cinderella lived in a dusty attic high up in the tower.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="105" data-end="111.32">
+                    <span class="live-transcript__time">01:45</span>
+                    <span class="live-transcript__text">She dreamed of a life where she could be free and happy.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="112.72" data-end="118.47">
+                    <span class="live-transcript__time">01:52</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: A golden carriage arrives at the castle gate.]</span> One morning a royal messenger arrived with exciting news.</span>
+                  </li>
+                </ol>
+                <div class="live-transcript__foot">
+                  <p class="live-transcript__hint">Visual descriptions appear in [square brackets].</p>
+                  <p><a href="../assets/transcripts/cinderella-video.en.vtt" download>Captions (VTT)</a> &middot; <a href="../assets/transcripts/cinderella-transcript.txt" download>Plain text transcript</a></p>
+                </div>
+              </section>
+            </div>
           </article>
 
-          <!-- Reading content -->
+          <article class="story story--audio" aria-labelledby="audio-h">
+            <header class="story__header">
+              <p class="eyebrow">Audio version</p>
+              <h2 id="audio-h">Listen to the story</h2>
+              <p class="story__meta">Audio &middot; 2 minutes &middot; Live transcript</p>
+            </header>
+
+            <div class="story__watch">
+              <figure class="player player--audio">
+                <div class="player__cover" aria-hidden="true"><span>Audio story</span></div>
+                <audio id="story-audio" class="player__media" controls preload="metadata" aria-describedby="audio-caption">
+                  <source src="../assets/audio/cinderella-clip.mp3" type="audio/mpeg">
+                  <p>Your browser cannot play this audio. <a href="#transcript-audio">Read the transcript instead</a>.</p>
+                </audio>
+                <figcaption class="figure__caption" id="audio-caption">A short animated retelling of Cinderella, with narration and dialogue.</figcaption>
+              </figure>
+
+              <section class="live-transcript" id="transcript-audio" data-live-transcript data-media="#story-audio" aria-labelledby="transcript-audio-title">
+                <div class="live-transcript__head">
+                  <div>
+                    <p class="eyebrow">Live transcript</p>
+                    <h3 id="transcript-audio-title">Follow the audio</h3>
+                  </div>
+                  <button class="live-transcript__status" type="button" data-transcript-status aria-pressed="true">Following</button>
+                </div>
+                <ol class="live-transcript__body" tabindex="0" aria-label="Audio transcript lines">
+                  <li class="live-transcript__line" data-start="0.4" data-end="4">
+                    <span class="live-transcript__time">00:00</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: A castle stands above a river in a green valley.]</span> Once upon a time in a beautiful land far away</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="4" data-end="7.2">
+                    <span class="live-transcript__time">00:04</span>
+                    <span class="live-transcript__text">lived a happy young girl named Ella.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="7.2" data-end="12.02">
+                    <span class="live-transcript__time">00:07</span>
+                    <span class="live-transcript__text">Ella lived with her father who loved her very much.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="12.72" data-end="16.32">
+                    <span class="live-transcript__time">00:12</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Ella&rsquo;s father lifts her in a rose garden.]</span> Their days were full of sunshine.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="16.32" data-end="19.039">
+                    <span class="live-transcript__time">00:16</span>
+                    <span class="live-transcript__text">Higher, Daddy. Higher.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="19.039" data-end="24.72">
+                    <span class="live-transcript__time">00:19</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Rain falls as Ella mourns her father.]</span> But sadness came when her father passed away, leaving Ella all alone.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="25.6" data-end="29.84">
+                    <span class="live-transcript__time">00:25</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Lady Tremaine stands at the top of a staircase.]</span> Her stepmother, Lady Tremaine, was cold and unkind.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="30.84" data-end="32.84">
+                    <span class="live-transcript__time">00:30</span>
+                    <span class="live-transcript__text">She took over the house.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="33.16" data-end="36.75">
+                    <span class="live-transcript__time">00:33</span>
+                    <span class="live-transcript__text">She brought her two daughters, Anastasia and Drizella,</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="36.75" data-end="43.6">
+                    <span class="live-transcript__time">00:36</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: The stepsisters argue in a messy bedroom.]</span> who were loud and messy. They treated poor Ella like a servant.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="43.6" data-end="46.719">
+                    <span class="live-transcript__time">00:43</span>
+                    <span class="live-transcript__text">They even changed her name.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="46.719" data-end="52.68">
+                    <span class="live-transcript__time">00:46</span>
+                    <span class="live-transcript__text">The ball is tonight, Ella. Enjoy your scrubbing.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="53.199" data-end="58.879">
+                    <span class="live-transcript__time">00:53</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella kneels on the floor, scrubbing.]</span> Look at her. She is covered in cinders and dirt.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="58.879" data-end="62.16">
+                    <span class="live-transcript__time">00:58</span>
+                    <span class="live-transcript__text">Let's call her Cinderella.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="62.16" data-end="67.159">
+                    <span class="live-transcript__time">01:02</span>
+                    <span class="live-transcript__text">Yes, Cinderella the Maid.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="67.2" data-end="73">
+                    <span class="live-transcript__time">01:07</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella works in the kitchen.]</span> From that day on, Cinderella worked from sunrise to sunset.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="73" data-end="77.6">
+                    <span class="live-transcript__time">01:13</span>
+                    <span class="live-transcript__text">She cooked the meals, washed the dishes, and cleaned the clothes.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="83.04" data-end="90.758">
+                    <span class="live-transcript__time">01:23</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella smiles despite her work.]</span> Yet, despite their cruelty, Cinderella remained kind and gentle.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="90.96" data-end="98.359">
+                    <span class="live-transcript__time">01:30</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella kneels beside a mouse at a window.]</span> Don't worry, little friends. Someday things will be better.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="99.2" data-end="105">
+                    <span class="live-transcript__time">01:39</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: Cinderella sits in a dusty attic, looking at the castle through a round window.]</span> Cinderella lived in a dusty attic high up in the tower.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="105" data-end="111.32">
+                    <span class="live-transcript__time">01:45</span>
+                    <span class="live-transcript__text">She dreamed of a life where she could be free and happy.</span>
+                  </li>
+                  <li class="live-transcript__line" data-start="112.72" data-end="118.47">
+                    <span class="live-transcript__time">01:52</span>
+                    <span class="live-transcript__text"><span class="live-transcript__note">[Visual: A golden carriage arrives at the castle gate.]</span> One morning a royal messenger arrived with exciting news.</span>
+                  </li>
+                </ol>
+                <div class="live-transcript__foot">
+                  <p class="live-transcript__hint">Visual descriptions appear in [square brackets].</p>
+                  <p><a href="../assets/transcripts/cinderella-audio.en.vtt" download>Captions (VTT)</a> &middot; <a href="../assets/transcripts/cinderella-transcript.txt" download>Plain text transcript</a></p>
+                </div>
+              </section>
+            </div>
+          </article>
+
           <section class="story story--reading" aria-labelledby="reading-heading">
             <header class="story__header">
-              <h2 id="reading-heading">Read the story: Lina and the Last Bus</h2>
-              <p class="story__meta">Written story &middot; about 3 minutes to read &middot; an original retelling of the Cinderella fairy tale</p>
+              <p class="eyebrow">Read the story</p>
+              <h2 id="reading-heading">Lina and the Last Bus</h2>
+              <p class="story__meta">Written story &middot; about 3 minutes &middot; An original retelling of the Cinderella fairy tale</p>
             </header>
 
             <h3>The night shift</h3>
@@ -131,73 +346,40 @@
             <p>
               Lina took it and smiled. This time, she did not run.
             </p>
-
-           
           </section>
-
-          <!-- Audio story -->
-          <article class="story" aria-labelledby="audio-h">
-            <header class="story__header">
-              <h2 id="audio-h">Listen: A Cinderella Story (audio clip)</h2>
-              <p class="story__meta">Audio &middot; about 2 minutes &middot; transcript included</p>
-            </header>
-
-            <figure class="player">
-              <audio class="player__media" controls preload="metadata" aria-describedby="audio-caption">
-                <source src="../assets/audio/cinderella-clip.mp3" type="audio/mpeg">
-                <p>Your browser cannot play this audio. <a href="#transcript-audio">Read the transcript instead</a>.</p>
-              </audio>
-              <figcaption class="figure__caption" id="audio-caption">A short animated retelling of Cinderella, with narration and dialogue.</figcaption>
-            </figure>
-
-            <details class="transcript" id="transcript-audio">
-              <summary class="transcript__summary">Full transcript (audio)</summary>
-              <p>Descriptions of key visual action appear in [square brackets].</p>
-              <p><span class="transcript__time">[00:00]</span> <em>[Visual: A castle stands above a river in a green valley.]</em> <strong>Narrator:</strong> Once upon a time in a beautiful land far away lived a happy young girl named Ella.</p>
-              <p><span class="transcript__time">[00:10]</span> <em>[Visual: Ella&rsquo;s father lifts her in a rose garden.]</em> <strong>Narrator:</strong> Ella lived with her father who loved her very much. Their days were full of sunshine.</p>
-              <p><span class="transcript__time">[00:16]</span> <strong>Young Ella:</strong> Higher, Daddy. Higher.</p>
-              <p><span class="transcript__time">[00:19]</span> <em>[Visual: Rain falls as Ella mourns her father.]</em> <strong>Narrator:</strong> But sadness came when her father passed away, leaving Ella all alone.</p>
-              <p><span class="transcript__time">[00:25]</span> <em>[Visual: Lady Tremaine stands at the top of a staircase.]</em> <strong>Narrator:</strong> Her stepmother, Lady Tremaine, was cold and unkind. She took over the house.</p>
-              <p><span class="transcript__time">[00:33]</span> <em>[Visual: The two stepsisters argue in a messy bedroom.]</em> <strong>Narrator:</strong> She brought her two daughters, Anastasia and Drizella, who were loud and messy. They treated poor Ella like a servant. They even changed her name.</p>
-              <p><span class="transcript__time">[00:46]</span> <strong>Lady Tremaine:</strong> The ball is tonight, Ella. Enjoy your scrubbing.</p>
-              <p><span class="transcript__time">[00:53]</span> <em>[Visual: Cinderella kneels on the floor, scrubbing.]</em> <strong>Stepsisters:</strong> Look at her. She is covered in cinders and dirt.</p>
-              <p><span class="transcript__time">[00:59]</span> <strong>Stepsisters:</strong> Let&rsquo;s call her Cinderella.</p>
-              <p><span class="transcript__time">[01:02]</span> <strong>Stepsisters:</strong> Yes, Cinderella the Maid.</p>
-              <p><span class="transcript__time">[01:07]</span> <em>[Visual: Cinderella works in the kitchen.]</em> <strong>Narrator:</strong> From that day on, Cinderella worked from sunrise to sunset. She cooked the meals, washed the dishes, and cleaned the clothes.</p>
-              <p><span class="transcript__time">[01:23]</span> <em>[Visual: Cinderella smiles despite her work.]</em> <strong>Narrator:</strong> Yet, despite their cruelty, Cinderella remained kind and gentle.</p>
-              <p><span class="transcript__time">[01:31]</span> <em>[Visual: Cinderella kneels beside a mouse at a window.]</em> <strong>Cinderella:</strong> Don&rsquo;t worry, little friends. Someday things will be better.</p>
-              <p><span class="transcript__time">[01:39]</span> <em>[Visual: Cinderella sits in a dusty attic, looking at the castle through a round window.]</em> <strong>Narrator:</strong> Cinderella lived in a dusty attic high up in the tower. She dreamed of a life where she could be free and happy.</p>
-              <p><span class="transcript__time">[01:52]</span> <em>[Visual: A golden carriage arrives at the castle gate.]</em> <strong>Narrator:</strong> One morning a royal messenger arrived with exciting news.</p>
-              <p><a href="../assets/transcripts/cinderella-audio.en.vtt" download>Download the audio captions (WebVTT)</a> &middot; <a href="../assets/transcripts/cinderella-transcript.txt" download>Download the transcript as plain text</a></p>
-            </details>
-          </article>
         </div>
 
-        <aside class="related related--padded" aria-labelledby="related-heading">
-          <h2 id="related-heading">Related stories</h2>
-          <ul class="card-grid card-grid--single">
+        <aside class="related" aria-labelledby="related-heading">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Keep exploring</p>
+              <h2 id="related-heading">Related stories</h2>
+            </div>
+            <p>Two more ways into the same story.</p>
+          </div>
+          <ul class="card-grid card-grid--related">
             <li class="card-grid__item">
               <article class="media-card">
-                <div class="media-card__thumb" aria-hidden="true">Audio</div>
+                <div class="media-card__thumb media-card__thumb--audio" aria-hidden="true"><span>Audio</span></div>
                 <div class="media-card__body">
-                  <h3 class="media-card__title"><a href="#audio-h">A Cinderella Story (audio clip)</a></h3>
-                  <p class="media-card__meta">Audio &middot; about 2 minutes</p>
-                  <p>Hear a short scene and follow the transcript.</p>
+                  <p class="media-card__meta">Audio &middot; 2 min</p>
+                  <h3 class="media-card__title"><a href="#audio-h">Listen to the audio version</a></h3>
+                  <p class="media-card__desc">Hear the story with the live transcript following along.</p>
                 </div>
               </article>
             </li>
             <li class="card-grid__item">
               <article class="media-card">
-                <div class="media-card__thumb" aria-hidden="true">Read</div>
+                <div class="media-card__thumb media-card__thumb--read" aria-hidden="true"><span>Read</span></div>
                 <div class="media-card__body">
+                  <p class="media-card__meta">Written &middot; 3 min</p>
                   <h3 class="media-card__title"><a href="#reading-heading">Lina and the Last Bus</a></h3>
-                  <p class="media-card__meta">Written story &middot; about 3 minutes</p>
-                  <p>Read an original retelling of the Cinderella fairy tale.</p>
+                  <p class="media-card__desc">An original retelling of the Cinderella fairy tale.</p>
                 </div>
               </article>
             </li>
           </ul>
-          <p><a href="../index.html#featured-heading">Browse all featured stories</a></p>
+          <p class="related__link"><a href="../index.html#featured-heading">Browse all featured stories</a></p>
         </aside>
       </div>
     </div>
@@ -205,7 +387,16 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <p>&copy; 2026 StoryCast. Every story has captions or a transcript. <a class="site-footer__link" href="../about.html#help">Report an access problem</a>.</p>
+      <div>
+        <a class="site-footer__brand" href="../index.html">StoryCast</a>
+        <p>Short stories with captions, transcripts and a live reading experience.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="../index.html">Home</a>
+        <a href="story.html">Featured story</a>
+        <a href="../about.html">About &amp; access</a>
+      </nav>
+      <p class="site-footer__legal">&copy; 2026 StoryCast. Every story has captions or a transcript. <a class="site-footer__link" href="../about.html#help">Report an access problem</a>.</p>
     </div>
   </footer>
 </body>

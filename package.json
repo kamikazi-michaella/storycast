@@ -6,7 +6,7 @@
   "scripts": {
     "sass:dev": "sass --watch sass/main.scss css/main.css",
     "sass:build": "sass sass/main.scss css/main.css --style=compressed",
-    "serve": "browser-sync start --server --no-notify --no-open --files \"**/*.html, css/**/*.css\"",
+    "serve": "browser-sync start --server --no-notify --no-open --files \"**/*.html, css/**/*.css, js/**/*.js\"",
     "dev": "concurrently \"npm:sass:dev\" \"npm:serve\"",
     "build": "npm run sass:build"
   },

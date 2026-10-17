@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About &amp; access | StoryCast</title>
   <meta name="description" content="Learn about the StoryCast mission, our accessibility features, and how to engage with our stories.">
+  <meta name="theme-color" content="#f7f2e8">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -26,52 +27,73 @@
 
   <main id="main" tabindex="-1">
 
-    <!-- Mission -->
     <section class="about-intro" aria-labelledby="about-heading">
-      <div class="wrap">
-        <h1 id="about-heading">About StoryCast</h1>
-        <p>StoryCast is a small home for audio and video storytelling. We believe a story belongs to everyone, so access is built in from the start, not added at the end.</p>
-        <p>Every story has captions or a transcript, so you can watch it, listen to it, or read it, whichever works best for you.</p>
+      <div class="wrap about-intro__inner">
+        <p class="eyebrow">About &amp; access</p>
+        <h1 id="about-heading">A small home for stories that include everyone.</h1>
+        <p class="about-intro__lede">StoryCast is an experiment in accessible storytelling. Each story is built to be watched, heard or read, without a separate, lesser version for disabled audiences.</p>
+        <p>We believe access belongs at the start of the design process, not at the end. That means captions, transcripts, keyboard support and readable type are part of the story from day one.</p>
       </div>
     </section>
 
-    <!-- Accessibility features -->
     <section class="related" aria-labelledby="access-heading">
       <div class="wrap">
-        <h2 id="access-heading">Accessibility features</h2>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Accessibility features</p>
+            <h2 id="access-heading">What is built in.</h2>
+          </div>
+          <p>The details that make the experience work for more people, without getting in the way.</p>
+        </div>
         <ul class="feature-list">
           <li class="feature-list__item">
+            <span class="feature-list__num" aria-hidden="true">01</span>
             <h3 class="feature-list__title">Captions and transcripts</h3>
-            <p>Every video has captions, and every video and audio story has a full written transcript of the dialogue, narration and key visual action.</p>
+            <p>Every video has captions. Every video and audio story has a full written transcript of the dialogue, narration and key visual action.</p>
           </li>
           <li class="feature-list__item">
+            <span class="feature-list__num" aria-hidden="true">02</span>
+            <h3 class="feature-list__title">Live transcript sync</h3>
+            <p>The transcript highlights the current line and scrolls with the media, so you can follow along without losing your place.</p>
+          </li>
+          <li class="feature-list__item">
+            <span class="feature-list__num" aria-hidden="true">03</span>
             <h3 class="feature-list__title">Keyboard navigation</h3>
             <p>Every link, button and media control works without a mouse. A skip link takes you straight to the main content, and a clear outline shows where you are.</p>
           </li>
           <li class="feature-list__item">
+            <span class="feature-list__num" aria-hidden="true">04</span>
             <h3 class="feature-list__title">Readable design</h3>
             <p>Text and controls meet WCAG 2.1 AA colour contrast, and the layout adapts to phones, tablets and desktops.</p>
           </li>
           <li class="feature-list__item">
+            <span class="feature-list__num" aria-hidden="true">05</span>
             <h3 class="feature-list__title">Screen reader support</h3>
             <p>Pages use landmarks, a logical heading order and labelled controls, with ARIA only where plain HTML is not enough.</p>
           </li>
           <li class="feature-list__item">
+            <span class="feature-list__num" aria-hidden="true">06</span>
             <h3 class="feature-list__title">Respect for motion settings</h3>
-            <p>If your device is set to reduce motion, StoryCast avoids animation.</p>
+            <p>If your device is set to reduce motion, StoryCast avoids smooth scrolling, animation and other movement.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- How to engage -->
-    <section aria-labelledby="engage-heading">
+    <section class="engage" aria-labelledby="engage-heading">
       <div class="wrap">
-        <h2 id="engage-heading">How to engage with our stories</h2>
-        <ol>
-          <li>Choose a story from the <a href="index.html#featured-heading">featured stories</a> on the home page.</li>
-          <li>Open the <a href="story/story.html">story page</a> and watch with captions, listen, or read the transcript.</li>
-          <li>Tell us what worked and what did not using the contact details below.</li>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How to engage</p>
+            <h2 id="engage-heading">Find your way in.</h2>
+          </div>
+          <p>Choose the format that fits the moment. The story is the same; the route is yours.</p>
+        </div>
+
+        <ol class="steps">
+          <li><span aria-hidden="true">01</span><p>Choose a story from the <a href="index.html#featured-heading">featured stories</a> on the home page.</p></li>
+          <li><span aria-hidden="true">02</span><p>Open the <a href="story/story.html">story page</a> and watch with captions, listen, or read the live transcript.</p></li>
+          <li><span aria-hidden="true">03</span><p>Tell us what worked and what did not using the contact details below.</p></li>
         </ol>
 
         <table class="shortcuts">
@@ -104,20 +126,22 @@
       </div>
     </section>
 
-    <!-- Credits -->
     <section class="related" aria-labelledby="credits-heading">
       <div class="wrap">
-        <h2 id="credits-heading">Credits</h2>
-        <p>Audio and video clips are an original animated retelling of Cinderella, used for educational purposes.</p>
+        <div class="credits-card">
+          <p class="eyebrow">Credits</p>
+          <h2 id="credits-heading">Made for learning.</h2>
+          <p>Audio and video clips are an original animated retelling of Cinderella, used for educational purposes.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Feedback -->
-    <section aria-labelledby="help">
+    <section class="help-cta" aria-labelledby="help">
       <div class="wrap">
-        <h2 id="help">Report an access problem</h2>
+        <p class="eyebrow">Feedback</p>
+        <h2 id="help">Report an access problem.</h2>
         <p>If something on this site is hard to use, tell us by opening an issue on the <a href="https://github.com/kamikazi-michaella/storycast/issues">StoryCast GitHub repository</a>. We aim to reply within two days.</p>
-        <p><a class="button" href="index.html">Back to the home page</a></p>
+        <p><a class="button button--light" href="index.html">Back to the home page</a></p>
       </div>
     </section>
 
@@ -125,7 +149,16 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <p>&copy; 2026 StoryCast. Every story has captions or a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
+      <div>
+        <a class="site-footer__brand" href="index.html">StoryCast</a>
+        <p>Short stories with captions, transcripts and a live reading experience.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="story/story.html">Featured story</a>
+        <a href="about.html">About &amp; access</a>
+      </nav>
+      <p class="site-footer__legal">&copy; 2026 StoryCast. Every story has captions or a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
     </div>
   </footer>
 </body>

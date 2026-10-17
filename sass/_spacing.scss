@@ -1,13 +1,30 @@
+$space-xs: 0.25rem;
 $space-s: 0.5rem;
 $space-m: 1rem;
-$space-l: 2rem;
-$space-xl: 4rem;
+$space-l: 1.75rem;
+$space-xl: 3.5rem;
+$space-2xl: 6rem;
+$radius-s: 0.5rem;
+$radius-m: 1rem;
+$radius-l: 1.5rem;
+$radius-pill: 999px;
+$shadow-card: 0 24px 50px -38px rgba(24, 21, 16, 0.35);
+$shadow-soft: 0 36px 90px -55px rgba(24, 21, 16, 0.45);
 
 @layer tokens {
     :root {
+        --xs: #{$space-xs};
         --s: #{$space-s};
         --m: #{$space-m};
         --l: #{$space-l};
         --xl: #{$space-xl};
+        --2xl: #{$space-2xl};
+        --radius-s: #{$radius-s};
+        --radius-m: #{$radius-m};
+        --radius-l: #{$radius-l};
+        --radius-pill: #{$radius-pill};
+        --shadow-card: #{$shadow-card};
+        --shadow-soft: #{$shadow-soft};
+        --section-y: clamp(3.5rem, 7vw, 6.5rem);
     }
 }

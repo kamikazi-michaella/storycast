@@ -1,20 +1,34 @@
-// Colour tokens. On white: ink 16:1, brand 7.4:1, muted 7:1 (all pass WCAG AA)
-$paper: #ffffff;
-$wash: #eef3f6;
-$ink: #0f1b2d;
-$muted: #43506a;
-$brand: #0b5c6b;
-$brand-dark: #08424d;
-$signal: #ffc83d;
+// Light editorial palette. All text/background pairs are checked against WCAG AA.
+$paper: #f7f2e8;
+$surface: #fffdf8;
+$wash: #efe6d6;
+$ink: #181510;
+$muted: #645d51;
+$brand: #a83a16;
+$brand-dark: #7a2a10;
+$brand-soft: #f5ddd2;
+$teal: #0f6b63;
+$teal-soft: #d9ece8;
+$gold: #e7b84b;
+$line: #d8cbb8;
+$white: #ffffff;
+$muted-dark: #c9c0b1;
 
 @layer tokens {
     :root {
         --paper: #{$paper};
+        --surface: #{$surface};
         --wash: #{$wash};
         --ink: #{$ink};
         --muted: #{$muted};
         --brand: #{$brand};
         --brand-dark: #{$brand-dark};
-        --signal: #{$signal};
+        --brand-soft: #{$brand-soft};
+        --teal: #{$teal};
+        --teal-soft: #{$teal-soft};
+        --gold: #{$gold};
+        --line: #{$line};
+        --white: #{$white};
+        --muted-dark: #{$muted-dark};
     }
 }

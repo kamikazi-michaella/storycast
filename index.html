@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | StoryCast</title>
   <meta name="description" content="StoryCast shares short audio and video stories, each with captions or a full transcript.">
+  <meta name="theme-color" content="#f7f2e8">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -26,45 +27,67 @@
 
   <main id="main" tabindex="-1">
 
-    <!-- Introduction -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="wrap hero__inner">
         <div class="hero__text">
+          <p class="eyebrow">Audio + video storytelling</p>
           <h1 id="hero-heading">Stories you can watch, hear, or read.</h1>
-          <p>StoryCast shares short audio and video stories. Every video comes with captions, and every story comes with a full transcript, so everyone can take part.</p>
-          <a class="button" href="story/story.html">Play the featured story</a>
+          <p class="hero__lede">Short films and audio stories with captions, transcripts and a live reading view. Pick the way that works best for you.</p>
+          <div class="hero__actions">
+            <a class="button" href="story/story.html">Watch the featured story</a>
+            <a class="button button--ghost" href="#featured-heading">Browse stories</a>
+          </div>
+          <ul class="hero__proof" aria-label="Access features">
+            <li>Captions</li>
+            <li>Live transcripts</li>
+            <li>Keyboard friendly</li>
+          </ul>
         </div>
         <figure class="hero__figure">
-          <div class="hero__visual">Now playing: A Cinderella Story (video clip)</div>
-          <figcaption class="figure__caption">Featured: a short video clip with captions and a transcript.</figcaption>
+          <div class="hero__visual">
+            <img src="assets/video/cinderella-clip-poster.jpg" alt="A castle above a river in a green valley" width="640" height="360">
+            <span class="hero__badge">Featured story</span>
+            <span class="hero__play" aria-hidden="true"></span>
+          </div>
+          <figcaption class="figure__caption">A Cinderella Story &middot; 2 minutes &middot; captioned and transcribed</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Featured stories -->
     <section class="featured" aria-labelledby="featured-heading">
       <div class="wrap">
-        <h2 id="featured-heading">Featured stories</h2>
-        <p>Choose a story and pick how you want to experience it.</p>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Featured stories</p>
+            <h2 id="featured-heading">Pick your way in.</h2>
+          </div>
+          <p>Watch the visual retelling or close your eyes and listen. Both versions follow the same transcript.</p>
+        </div>
 
         <ul class="card-grid">
           <li class="card-grid__item">
             <article class="media-card">
-              <div class="media-card__thumb" aria-hidden="true">Video</div>
+              <div class="media-card__thumb media-card__thumb--video" aria-hidden="true">
+                <img src="assets/video/cinderella-clip-poster.jpg" alt="" width="640" height="360" loading="lazy" decoding="async">
+              </div>
               <div class="media-card__body">
-                <h3 class="media-card__title"><a href="story/story.html">A Cinderella Story (video clip)</a></h3>
-                <p class="media-card__meta">Video &middot; about 2 minutes &middot; captions + transcript</p>
-                <p>A short animated retelling of Cinderella, with captions and a transcript that describes key visual action.</p>
+                <p class="media-card__meta">Video &middot; 2 min &middot; Captions + live transcript</p>
+                <h3 class="media-card__title"><a href="story/story.html">A Cinderella Story</a></h3>
+                <p class="media-card__desc">A short animated retelling with narration, dialogue and a transcript that follows the action.</p>
+                <span class="media-card__cta" aria-hidden="true">Watch now <span>&rarr;</span></span>
               </div>
             </article>
           </li>
           <li class="card-grid__item">
             <article class="media-card">
-              <div class="media-card__thumb" aria-hidden="true">Audio</div>
+              <div class="media-card__thumb media-card__thumb--audio" aria-hidden="true">
+                <span>Audio</span>
+              </div>
               <div class="media-card__body">
-                <h3 class="media-card__title"><a href="story/story.html#audio-h">A Cinderella Story (audio clip)</a></h3>
-                <p class="media-card__meta">Audio &middot; about 2 minutes &middot; transcript</p>
-                <p>Listen to a short scene and follow along with the written transcript.</p>
+                <p class="media-card__meta">Audio &middot; 2 min &middot; Live transcript</p>
+                <h3 class="media-card__title"><a href="story/story.html#audio-h">A Cinderella Story</a></h3>
+                <p class="media-card__desc">The same story as a listening experience, with a transcript that highlights each line as it plays.</p>
+                <span class="media-card__cta" aria-hidden="true">Listen now <span>&rarr;</span></span>
               </div>
             </article>
           </li>
@@ -72,16 +95,33 @@
       </div>
     </section>
 
-    <!-- Access highlights -->
     <section class="highlights" aria-labelledby="highlights-heading">
       <div class="wrap">
-        <h2 id="highlights-heading">Made for everyone</h2>
+        <div class="section-head section-head--dark">
+          <div>
+            <p class="eyebrow">Made for everyone</p>
+            <h2 id="highlights-heading">Access is part of the story.</h2>
+          </div>
+          <p>No separate version buried in a menu. The words, the sound and the visuals are designed to work together.</p>
+        </div>
         <ul class="highlights__list">
-          <li><strong>Captions</strong> on every video.</li>
-          <li><strong>Transcripts</strong> for every video and audio story.</li>
-          <li><strong>Keyboard friendly</strong> with a clear focus outline.</li>
+          <li>
+            <span class="highlights__num">01</span>
+            <h3>Captions on every video</h3>
+            <p>Turn on English captions and follow the dialogue without missing a beat.</p>
+          </li>
+          <li>
+            <span class="highlights__num">02</span>
+            <h3>Transcripts that keep up</h3>
+            <p>The live transcript highlights the current line and scrolls with the media.</p>
+          </li>
+          <li>
+            <span class="highlights__num">03</span>
+            <h3>Comfortable by design</h3>
+            <p>Keyboard-friendly controls, clear focus states and a layout that reflows on small screens.</p>
+          </li>
         </ul>
-        <p><a href="about.html">Learn more about our access features</a></p>
+        <p class="highlights__link"><a href="about.html">Learn more about our access features</a></p>
       </div>
     </section>
 
@@ -89,7 +129,16 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <p>&copy; 2026 StoryCast. Every story has captions or a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
+      <div>
+        <a class="site-footer__brand" href="index.html">StoryCast</a>
+        <p>Short stories with captions, transcripts and a live reading experience.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="story/story.html">Featured story</a>
+        <a href="about.html">About &amp; access</a>
+      </nav>
+      <p class="site-footer__legal">&copy; 2026 StoryCast. Every story has captions or a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
     </div>
   </footer>
 </body>
