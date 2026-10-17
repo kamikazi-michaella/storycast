@@ -2,9 +2,7 @@
 
 A 3-page accessible microsite that showcases audio and video storytelling. It is built with semantic HTML5, Sass, CSS Grid, Flexbox and container queries, with no frameworks.
 
-**Author:** YOUR NAME
-**Course / Assignment:** Summative project, StoryCast Microsite
-**Figma file:** PASTE LINK HERE
+
 
 ---
 
@@ -49,10 +47,7 @@ Shared on every page: skip link, main navigation, footer link to "Report an acce
 - Transcripts sit directly under each player so people who cannot hear or watch find them without searching.
 - Related stories sit beside the main story on large screens and below it on small screens to keep people moving through the site.
 
-### Wireframes and mockups
 
-Wireframes and high-fidelity digital mockups of all three pages (desktop and mobile) are in Figma: **PASTE LINK HERE**.
-Exported images are in the `/design` folder: ADD FILE NAMES.
 
 ---
 
@@ -95,16 +90,7 @@ sass/
 - [x] `prefers-reduced-motion` respected
 - [x] Responsive down to small phone screens
 
-**Testing**
 
-| Check | Tool or method | Result |
-|---|---|---|
-| Automated audit | Lighthouse (Accessibility) | ADD SCORES |
-| Automated audit | WAVE | ADD RESULT |
-| Keyboard only | Tab through every page | ADD RESULT |
-| Zoom to 200% | Browser zoom | ADD RESULT |
-
-Screenshots are in `/docs/screenshots`: ADD FILE NAMES.
 
 ---
 
@@ -142,10 +128,5 @@ storycast/
 └── README.md
 ```
 
----
 
-## 6. Credits
 
-- Audio and video clips from *A Cinderella Story* (2004), used for educational purposes with teacher permission.
-- "Lina and the Last Bus" is an original written story based on the public-domain Cinderella fairy tale.
-- Built with vanilla HTML and Sass, with no frameworks.
