@@ -1,12 +1,12 @@
 {
   "name": "storycast",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An accessible three-page storytelling microsite built with semantic HTML, Sass and native media.",
+  "private": true,
   "scripts": {
-    "sass:dev": "sass --watch --update sass/main.scss css/main.css",
-    "sass:build": "sass sass/main.scss css/main.css --style=compressed --no-source-map",
-    "serve": "browser-sync start --server --no-notify --files \"index.html, css/.css, js/.js\"",
+    "sass:dev": "sass --watch sass/main.scss css/main.css",
+    "sass:build": "sass sass/main.scss css/main.css --style=compressed",
+    "serve": "browser-sync start --server --no-notify --no-open --files \"**/*.html, css/**/*.css\"",
     "dev": "concurrently \"npm:sass:dev\" \"npm:serve\"",
     "build": "npm run sass:build"
   },
@@ -14,6 +14,9 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "concurrently": "^10.0.6",
