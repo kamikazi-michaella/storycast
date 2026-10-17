@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Cinderella Story (video clip) | StoryCast</title>
+  <meta name="description" content="Watch a short video clip and listen to an audio clip, each with captions and a full transcript.">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__logo" href="index.html">StoryCast</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" aria-current="page" href="story.html">Featured story</a></li>
+          <li><a class="site-nav__link" href="about.html">About &amp; access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb__list">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Featured story</li>
+        </ol>
+      </nav>
+
+      <div class="story-layout">
+        <div class="story-layout__main">
+
+          <!-- Video story -->
+          <article class="story" aria-labelledby="story-heading">
+            <header class="story__header">
+              <h1 id="story-heading">A Cinderella Story (video clip)</h1>
+              <p class="story__meta">Video &middot; about 30 seconds &middot; captions and transcript included</p>
+              <p><a href="#transcript-video">Jump to the transcript</a></p>
+            </header>
+
+            <figure class="player">
+              <video class="player__media" controls preload="metadata" aria-describedby="video-caption">
+                <source src="media/cinderella-video.mp4" type="video/mp4">
+                <track kind="captions" src="media/cinderella-video.en.vtt" srclang="en" label="English captions" default>
+                <p>Your browser cannot play this video. <a href="#transcript-video">Read the transcript instead</a>.</p>
+              </video>
+              <figcaption class="figure__caption" id="video-caption">ADD A ONE-SENTENCE DESCRIPTION OF WHAT HAPPENS ON SCREEN.</figcaption>
+            </figure>
+
+            <details class="transcript" id="transcript-video">
+              <summary class="transcript__summary">Full transcript (video)</summary>
+          <p><span class="transcript__time">[00:00]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+          <p><span class="transcript__time">[00:08]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+          <p><span class="transcript__time">[00:16]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+          <p><span class="transcript__time">[00:24]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+        </details>
+          </article>
+          <!-- Audio story -->
+          <article class="story" aria-labelledby="audio-h">
+            <header class="story__header">
+              <h2 id="audio-h">Listen: A Cinderella Story (audio clip)</h2>
+              <p class="story__meta">Audio &middot; about 30 seconds &middot; transcript included</p>
+            </header>
+
+            <figure class="player">
+              <audio class="player__media" controls preload="metadata" aria-describedby="audio-caption">
+                <source src="media/cinderella-clip.mp3" type="audio/mpeg">
+                <track kind="captions" src="media/cinderella-clip.en.vtt" srclang="en" label="English captions">
+                <p>Your browser cannot play this audio. <a href="#transcript-audio">Read the transcript instead</a>.</p>
+              </audio>
+              <figcaption class="figure__caption" id="audio-caption">A short clip from the 2004 film A Cinderella Story, used with teacher permission.</figcaption>
+            </figure>
+
+            <details class="transcript" id="transcript-audio">
+              <summary class="transcript__summary">Full transcript (audio)</summary>
+          <p><span class="transcript__time">[00:00]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+          <p><span class="transcript__time">[00:08]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+          <p><span class="transcript__time">[00:16]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+          <p><span class="transcript__time">[00:24]</span> <strong>SPEAKER:</strong> ADD WHAT YOU HEAR HERE</p>
+        </details>
+          </article>
+        </div>
+        <aside class="related related--padded" aria-labelledby="related-heading">
+          <h2 id="related-heading">Related stories</h2>
+          <ul class="card-grid card-grid--single">
+            <li class="card-grid__item">
+              <article class="media-card">
+                <div class="media-card__thumb" aria-hidden="true">Audio</div>
+                <div class="media-card__body">
+                  <h3 class="media-card__title"><a href="#audio-h">A Cinderella Story (audio clip)</a></h3>
+                  <p class="media-card__meta">Audio &middot; about 30 seconds</p>
+                  <p>Hear a short scene and follow the transcript.</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <p><a href="index.html#featured-heading">Browse all featured stories</a></p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>&copy; 2026 StoryCast. Every story has captions and a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
