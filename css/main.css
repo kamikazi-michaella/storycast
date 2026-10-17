@@ -193,6 +193,14 @@
     gap: var(--xl);
     min-width: 0;
   }
+  .feature-list {
+    display: grid;
+    gap: var(--l);
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    list-style: none;
+    margin: var(--l) 0 0;
+    padding: 0;
+  }
 }
 @layer components {
   .button {
@@ -370,6 +378,54 @@
   .related__title,
   .related h2 {
     margin-top: 0;
+  }
+  .about-intro {
+    background: var(--paper);
+  }
+  .about-intro h1 {
+    margin-top: 0;
+  }
+  .about-intro p {
+    font-size: 1.25rem;
+  }
+  .feature-list__item {
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    border-top: 6px solid var(--brand);
+    padding: var(--m);
+  }
+  .feature-list__title {
+    margin-block: 0 var(--s);
+    font-size: 1.25rem;
+  }
+  .feature-list__item p {
+    margin: 0;
+  }
+  .shortcuts {
+    width: 100%;
+    max-width: 44rem;
+    margin-top: var(--l);
+    border-collapse: collapse;
+  }
+  .shortcuts caption {
+    text-align: left;
+    font-weight: 700;
+    padding-bottom: var(--s);
+  }
+  .shortcuts th,
+  .shortcuts td {
+    text-align: left;
+    padding: var(--s) var(--m);
+    border: 2px solid var(--ink);
+    vertical-align: top;
+  }
+  .shortcuts thead th {
+    background: var(--ink);
+    color: #fff;
+  }
+  .shortcuts tbody th {
+    background: var(--wash);
+    white-space: nowrap;
   }
 }
 

@@ -95,4 +95,13 @@
         gap: var(--xl);
         min-width: 0; // lets the video shrink inside the grid column
     }
+
+    .feature-list {
+        display: grid;
+        gap: var(--l);
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        list-style: none;
+        margin: var(--l) 0 0;
+        padding: 0;
+    }
 }
