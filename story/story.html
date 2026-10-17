@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A Cinderella Story (video clip) | StoryCast</title>
-  <meta name="description" content="Watch a short video clip and listen to an audio clip, each with captions and a full transcript.">
+  <meta name="description" content="Watch a short video clip and listen to an audio clip, each with captions, a full transcript and a written summary.">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 
   <header class="site-header">
     <div class="wrap site-header__inner">
-      <a class="site-header__logo" href="index.html">StoryCast</a>
+      <a class="site-header__logo" href="../index.html">StoryCast</a>
       <nav class="site-nav" aria-label="Main">
         <ul class="site-nav__list">
           <li><a class="site-nav__link" href="../index.html">Home</a></li>
@@ -27,7 +27,7 @@
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol class="breadcrumb__list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li aria-current="page">Featured story</li>
         </ol>
       </nav>
@@ -40,16 +40,16 @@
             <header class="story__header">
               <h1 id="story-heading">A Cinderella Story (video clip)</h1>
               <p class="story__meta">Video &middot; about 30 seconds &middot; captions and transcript included</p>
-              <p><a href="#transcript-video">Jump to the transcript</a></p>
+              <p><a href="#transcript-video">Jump to the transcript</a> &middot; <a href="#reading-heading">Jump to the written summary</a></p>
             </header>
 
             <figure class="player">
               <video class="player__media" controls preload="metadata" aria-describedby="video-caption">
                 <source src="../videos/videoplayback (online-video-cutter.com).mp4" type="video/mp4">
-                <track kind="captions" src="media/cinderella-video.en.vtt" srclang="en" label="English captions" default>
+                <track kind="captions" src="../media/cinderella-video.en.vtt" srclang="en" label="English captions" default>
                 <p>Your browser cannot play this video. <a href="#transcript-video">Read the transcript instead</a>.</p>
               </video>
-              <figcaption class="figure__caption" id="video-caption">ADD A ONE-SENTENCE DESCRIPTION OF WHAT HAPPENS ON SCREEN.</figcaption>
+              
             </figure>
 
             <details class="transcript" id="transcript-video">
@@ -61,6 +61,66 @@
             </details>
           </article>
 
+          <!-- Reading content -->
+          <section class="story story--reading" aria-labelledby="reading-heading">
+            <header class="story__header">
+              <h2 id="reading-heading">Read the story: Lina and the Last Bus</h2>
+              <p class="story__meta">Written story &middot; about 3 minutes to read &middot; an original retelling of the Cinderella fairy tale</p>
+            </header>
+
+            <h3>The night shift</h3>
+            <p>
+              Lina worked every evening at her aunt's tailoring shop, long after her cousins had gone out.
+              While they laughed on the street, she hemmed trousers, stitched buttons and swept the floor.
+              Nobody thanked her. Nobody asked what she wanted. But every night, on the walk home, she
+              hummed a tune she had made up herself.
+            </p>
+
+            <h3>The invitation</h3>
+            <p>
+              One Friday, a poster appeared in the shop window: a city music night, open to anyone who
+              could sing. Lina read it three times. Her cousins laughed. &ldquo;You? On a stage?&rdquo; her aunt said,
+              and handed her a bag of mending that would take all night.
+            </p>
+            <p>
+              Lina finished the mending by sunset, faster than she ever had. Then she folded the last
+              shirt, picked up her bag and ran.
+            </p>
+
+            <h3>The last bus</h3>
+            <p>
+              The bus was almost empty. An older woman sat near the back, knitting. She looked at Lina&rsquo;s
+              worn shoes and her ironed dress, and she smiled. &ldquo;You look like someone going somewhere
+              important,&rdquo; she said. Lina shrugged. &ldquo;I just want to sing one song.&rdquo; The woman
+              nodded. &ldquo;Then sing it well.&rdquo; She pressed a small silver pin into Lina&rsquo;s hand
+              &ldquo;for luck.&rdquo;
+            </p>
+
+            <h3>The stage</h3>
+            <p>
+              The hall was loud and bright. When her name was called, Lina&rsquo;s knees shook. She
+              fastened the pin to her collar, closed her eyes and hummed the first notes of her own tune.
+              Then she sang. The room grew quiet. By the final line, people were standing.
+            </p>
+
+            <h3>The pin</h3>
+            <p>
+              The clock struck eleven and Lina ran for the door, remembering the last bus. In her hurry, the
+              silver pin fell and rolled across the floor. A young organiser picked it up, turned it in
+              the light and looked for her, but she was gone.
+            </p>
+            <p>
+              The next morning, the organiser walked the whole neighbourhood, asking at every shop, until he
+              came to a small tailoring shop with a light still on. Inside, a girl was sweeping. She looked
+              up, and he held out the pin. &ldquo;I think this belongs to the girl who sang,&rdquo; he said.
+            </p>
+            <p>
+              Lina took it and smiled. This time, she did not run.
+            </p>
+
+           
+          </section>
+
           <!-- Audio story -->
           <article class="story" aria-labelledby="audio-h">
             <header class="story__header">
@@ -71,7 +131,7 @@
             <figure class="player">
               <audio class="player__media" controls preload="metadata" aria-describedby="audio-caption">
                 <source src="../audios/videoplayback (online-video-cutter.com).mp3" type="audio/mpeg">
-                <track kind="captions" src="media/cinderella-clip.en.vtt" srclang="en" label="English captions">
+                <track kind="captions" src="../media/cinderella-clip.en.vtt" srclang="en" label="English captions">
                 <p>Your browser cannot play this audio. <a href="#transcript-audio">Read the transcript instead</a>.</p>
               </audio>
               <figcaption class="figure__caption" id="audio-caption">A short clip from the 2004 film A Cinderella Story, used with teacher permission.</figcaption>
@@ -101,7 +161,7 @@
               </article>
             </li>
           </ul>
-          <p><a href="index.html#featured-heading">Browse all featured stories</a></p>
+          <p><a href="../index.html#featured-heading">Browse all featured stories</a></p>
         </aside>
       </div>
     </div>
@@ -109,7 +169,7 @@
 
   <footer class="site-footer">
     <div class="wrap site-footer__inner">
-      <p>&copy; 2026 StoryCast. Every story has captions and a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
+      <p>&copy; 2026 StoryCast. Every story has captions and a transcript. <a class="site-footer__link" href="../about.html#help">Report an access problem</a>.</p>
     </div>
   </footer>
 </body>

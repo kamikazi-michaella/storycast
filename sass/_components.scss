@@ -283,4 +283,53 @@
         background: var(--wash);
         white-space: nowrap;
     }
+
+    .story--reading {
+        background: var(--wash);
+        border: 2px solid var(--ink);
+        border-top: 6px solid var(--brand);
+        padding: var(--l);
+    }
+
+    .story--reading .story__header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: var(--m);
+        margin-bottom: var(--l);
+    }
+
+    .story--reading h2 {
+        font-size: var(--step-1);
+    }
+
+    /* Comfortable reading: larger text, generous line height, short lines */
+    .story--reading p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        max-width: 62ch;
+        margin-block: 0 var(--m);
+    }
+
+    /* Part headings */
+    .story--reading h3 {
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        color: var(--brand-dark);
+        margin-block: var(--l) var(--s);
+    }
+
+    .story--reading h3::before {
+        content: "";
+        display: inline-block;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-right: var(--s);
+        background: var(--signal);
+        border: 2px solid var(--ink);
+        transform: rotate(45deg);
+    }
+
+   
+   
 }
+
+
