@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol class="breadcrumb__list">
@@ -44,12 +44,12 @@
             </header>
 
             <figure class="player">
-              <video class="player__media" controls preload="metadata" aria-describedby="video-caption">
+              <video class="player__media" controls preload="metadata" playsinline width="640" height="360" poster="../assets/video/cinderella-clip-poster.jpg" aria-describedby="video-caption">
                 <source src="../assets/video/cinderella-clip.mp4" type="video/mp4">
                 <track kind="captions" src="../assets/transcripts/cinderella-video.en.vtt" srclang="en" label="English captions" default>
                 <p>Your browser cannot play this video. <a href="#transcript-video">Read the transcript instead</a>.</p>
               </video>
-              
+              <figcaption class="figure__caption" id="video-caption">A short animated retelling of Cinderella, with narration, dialogue and captions.</figcaption>
             </figure>
 
             <details class="transcript" id="transcript-video">
@@ -144,7 +144,6 @@
             <figure class="player">
               <audio class="player__media" controls preload="metadata" aria-describedby="audio-caption">
                 <source src="../assets/audio/cinderella-clip.mp3" type="audio/mpeg">
-                <track kind="captions" src="../assets/transcripts/cinderella-audio.en.vtt" srclang="en" label="English captions">
                 <p>Your browser cannot play this audio. <a href="#transcript-audio">Read the transcript instead</a>.</p>
               </audio>
               <figcaption class="figure__caption" id="audio-caption">A short animated retelling of Cinderella, with narration and dialogue.</figcaption>

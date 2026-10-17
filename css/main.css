@@ -133,10 +133,24 @@
   }
   .site-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: var(--m);
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+  @media (max-width: 40rem) {
+    .site-nav {
+      width: 100%;
+    }
+    .site-nav__list {
+      justify-content: flex-start;
+      gap: var(--s);
+    }
+    .site-nav__link {
+      padding-inline: var(--s);
+    }
   }
   .site-nav__link {
     color: #fff;
@@ -246,13 +260,9 @@
       aspect-ratio: 1;
     }
   }
-  @container card (max-width: 20rem) {
-    .media-card__meta {
-      display: none;
-    }
-  }
   .player__media {
     width: 100%;
+    height: auto;
   }
   .figure__caption {
     color: var(--muted);
@@ -426,6 +436,15 @@
   .shortcuts tbody th {
     background: var(--wash);
     white-space: nowrap;
+  }
+  @media (max-width: 30rem) {
+    .shortcuts th,
+    .shortcuts td {
+      padding: var(--s);
+    }
+    .shortcuts tbody th {
+      white-space: normal;
+    }
   }
   .story--reading {
     background: var(--wash);

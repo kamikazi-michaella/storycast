@@ -51,14 +51,9 @@
         }
     }
 
-    @container card (max-width: 20rem) {
-        .media-card__meta {
-            display: none;
-        }
-    }
-
     .player__media {
         width: 100%;
+        height: auto;
     }
 
     .figure__caption {
@@ -282,6 +277,17 @@
     .shortcuts tbody th {
         background: var(--wash);
         white-space: nowrap;
+    }
+
+    @media (max-width: 30rem) {
+        .shortcuts th,
+        .shortcuts td {
+            padding: var(--s);
+        }
+
+        .shortcuts tbody th {
+            white-space: normal;
+        }
     }
 
     .story--reading {
