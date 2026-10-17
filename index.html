@@ -1,17 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StoryCast</title>
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | StoryCast</title>
+  <meta name="description" content="StoryCast shares short audio and video stories, each with captions and a full transcript.">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <main class="container">
-        <h1>Hello, Sass</h1>
-        <p>If this is styled, the setup works.</p>
-        <button class="btn btn--primary">Click me</button>
-    </main>
-    
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__logo" href="index.html">StoryCast</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" aria-current="page" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="story.html">Featured story</a></li>
+          <li><a class="site-nav__link" href="about.html">About &amp; access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Introduction -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-heading">Stories you can watch, hear, or read.</h1>
+          <p>StoryCast shares short audio and video stories. Every story comes with captions and a full transcript, so everyone can take part.</p>
+          <a class="button" href="story.html">Play the featured story</a>
+        </div>
+        <figure class="hero__figure">
+          <div class="hero__visual" role="img" aria-label="Sound wave graphic">Now playing: A Cinderella Story (video clip)</div>
+          <figcaption class="figure__caption">Featured: a short video clip with captions and a transcript.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Featured stories -->
+    <section class="featured" aria-labelledby="featured-heading">
+      <div class="wrap">
+        <h2 id="featured-heading">Featured stories</h2>
+        <p>Choose a story and pick how you want to experience it.</p>
+
+        <ul class="card-grid">
+          <li class="card-grid__item">
+            <article class="media-card">
+              <div class="media-card__thumb" aria-hidden="true">Video</div>
+              <div class="media-card__body">
+                <h3 class="media-card__title"><a href="story.html">A Cinderella Story (video clip)</a></h3>
+                <p class="media-card__meta">Video &middot; about 30 seconds &middot; captions + transcript</p>
+                <p>A short clip from the 2004 film, with on-screen action described in the transcript.</p>
+              </div>
+            </article>
+          </li>
+          <li class="card-grid__item">
+            <article class="media-card">
+              <div class="media-card__thumb" aria-hidden="true">Audio</div>
+              <div class="media-card__body">
+                <h3 class="media-card__title"><a href="story.html#audio-h">A Cinderella Story (audio clip)</a></h3>
+                <p class="media-card__meta">Audio &middot; about 30 seconds &middot; transcript</p>
+                <p>Listen to a short scene and follow along with the written transcript.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Access highlights -->
+    <section class="highlights" aria-labelledby="highlights-heading">
+      <div class="wrap">
+        <h2 id="highlights-heading">Made for everyone</h2>
+        <ul class="highlights__list">
+          <li><strong>Captions</strong> on every video.</li>
+          <li><strong>Transcripts</strong> for every video and audio story.</li>
+          <li><strong>Keyboard friendly</strong> with a clear focus outline.</li>
+        </ul>
+        <p><a href="about.html">Learn more about our access features</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>&copy; 2026 StoryCast. Every story has captions and a transcript. <a class="site-footer__link" href="about.html#help">Report an access problem</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
